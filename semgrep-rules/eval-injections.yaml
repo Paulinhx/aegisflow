@@ -1,0 +1,10 @@
+rules:
+  - id: eval-injection
+    pattern: eval($X)
+    message: "Eval injection (MITRE T1059)"
+    languages: [python]
+    severity: ERROR
+    metadata:
+      mitre_attack:
+        tactic: execution
+        technique: T1059

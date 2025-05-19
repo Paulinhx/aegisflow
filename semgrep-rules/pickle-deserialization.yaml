@@ -1,0 +1,10 @@
+rules:
+  - id: insecure-pickle
+    pattern: pickle.loads(...)
+    message: "Insecure deserialization (MITRE T1609)"
+    languages: [python]
+    severity: ERROR
+    metadata:
+      mitre_attack:
+        tactic: initial-access
+        technique: T1609

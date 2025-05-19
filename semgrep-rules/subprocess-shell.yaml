@@ -1,0 +1,10 @@
+rules:
+  - id: shell-subprocess
+    pattern: subprocess.call(...)
+    message: "Shell execution (MITRE T1202)"
+    languages: [python]
+    severity: ERROR
+    metadata:
+      mitre_attack:
+        tactic: defense-evasion
+        technique: T1202
