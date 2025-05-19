@@ -39,3 +39,10 @@ jobs:
     - name: Summarize scan results
       run: python analysis/summarize.py
 
+    - name: Upload all scan reports
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+       name: scan-reports
+       path: reports/
+
