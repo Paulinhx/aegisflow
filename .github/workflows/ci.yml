@@ -25,7 +25,7 @@ jobs:
       run: semgrep --config ./semgrep-rules/ --json > reports/semgrep.json
 
     - name: Generate SBOM
-      run: ssyft dir:app/ --source-name=aegisflow --source-version=0.1.0 -o json > sbom/sbom.json
+      run: syft dir:app/ --source-name=aegisflow --source-version=0.1.0 -o json > sbom/sbom.json
 
     - name: Trivy scan
       run: trivy fs app/ > reports/trivy.txt
