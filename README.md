@@ -24,16 +24,19 @@ AegisFlow scans your application for:
 ## 📁 Project Structure
 
 aegisflow/
-├── app/ # Vulnerable Flask app
-├── semgrep-rules/ # Custom MITRE-tagged rules
-├── .github/workflows/ci.yml # GitHub Actions CI
-├── sbom/ # SBOM output via Syft
-├── scripts/ # OTX + dark web scripts
-├── reports/ # Results from Semgrep, Trivy, OTX
-├── analysis/ # Summary script for CI logs
-├── threat_model/ # STRIDE threat analysis + DFD diagram
-├── requirements.txt # Frozen Python deps
-└── README.md
+├── app/                    # Vulnerable Flask app
+├── semgrep-rules/          # Custom MITRE-tagged rules
+├── .github/
+│   └── workflows/
+│       └── ci.yml          # GitHub Actions CI
+├── sbom/                   # SBOM output via Syft
+├── scripts/                # OTX + dark web scripts
+├── reports/                # Results from Semgrep, Trivy, OTX
+├── analysis/               # Summary script for CI logs
+├── threat_model/           # STRIDE threat analysis + DFD diagram
+├── requirements.txt        # Frozen Python dependencies
+└── README.md               # Project documentation
+
 
 
 ---
