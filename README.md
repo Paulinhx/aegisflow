@@ -111,6 +111,8 @@ It performs:
 
 📌 Live CI badge:
 
+[![AegisFlow CI](https://github.com/Paulinhx/aegisflow/actions/workflows/ci.yml/badge.svg)](https://github.com/Paulinhx/aegisflow/actions/workflows/ci.yml)
+
 ---
 
 ## 🧠 Threat Modeling (STRIDE)
