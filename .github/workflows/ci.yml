@@ -32,6 +32,8 @@ jobs:
 
     - name: OTX threat check
       run: bash scripts/otx_sbom_check.sh sbom/sbom.json
+      env:
+        OTX_API_KEY: ${{ secrets.OTX_API_KEY }}
 
     - name: Dark web threat simulation
       run: bash scripts/dark_web_check.sh
