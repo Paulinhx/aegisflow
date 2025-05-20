@@ -7,8 +7,8 @@ venv/
 .env/
 
 # SBOM & report outputs
-sbom/
-reports/
+#sbom/
+#reports/
 
 # OS / editor files
 .DS_Store
