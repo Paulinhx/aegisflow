@@ -1,0 +1,36 @@
+{
+  "artifacts": [
+    {
+      "name": "eicar-test-file",
+      "version": "1.0.0",
+      "type": "file",
+      "locations": [ { "path": "/eicar.txt" } ],
+      "licenses": ["Test-License"],
+      "cpes": [],
+      "purl": "pkg:file/eicar-test@1.0.0",
+      "hashes": {
+        "SHA256": "44d88612fea8a8f36de82e1278abb02f"
+      }
+    }
+  ],
+  "artifactRelationships": [],
+  "source": {
+    "id": "a172cedc...",
+    "name": "app/",
+    "version": "",
+    "type": "directory",
+    "metadata": {
+      "path": "app/"
+    }
+  },
+  "distro": {},
+  "descriptor": {
+    "name": "syft",
+    "version": "1.25.1",
+    "configuration": { ... }
+  },
+  "schema": {
+    "version": "16.0.33",
+    "url": "https://raw.githubusercontent.com/anchore/syft/main/schema/json/schema-16.0.33.json"
+  }
+}
