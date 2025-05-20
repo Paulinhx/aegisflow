@@ -1,4 +1,3 @@
-
 #!/bin/bash
 set -e
 
@@ -8,11 +7,9 @@ API_KEY="${OTX_API_KEY}"
 echo "🔍 Checking SBOM hashes against AlienVault OTX..."
 echo "SBOM: $SBOM_FILE"
 
-# Get all SHA256 hashes from the SBOM file
 HASHES=$(jq -r '.artifacts[]?.hashes?.SHA256 // empty' "$SBOM_FILE")
 
 MATCH_FOUND=false
-
 mkdir -p reports
 > reports/otx_hits.json
 
@@ -30,10 +27,8 @@ for HASH in $HASHES; do
 done
 
 if [ "$MATCH_FOUND" = true ]; then
-  echo "❌ Threat intelligence match found in OTX. Failing build."
+  echo "❌ IOC matches found in OTX. Failing build."
   exit 1
 else
   echo "✅ No IOC matches found in OTX."
 fi
-
-
