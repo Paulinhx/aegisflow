@@ -23,7 +23,20 @@ AegisFlow scans your application for:
 
 ## 📁 Project Structure
 
-<pre> ```bash aegisflow/ ├── app/ # Vulnerable Flask app ├── semgrep-rules/ # Custom MITRE-tagged Semgrep rules ├── .github/ │ └── workflows/ │ └── ci.yml # GitHub Actions CI configuration ├── sbom/ # SBOM output via Syft ├── scripts/ # OTX and dark web scan scripts ├── reports/ # Security scan outputs (Semgrep, Trivy, OTX) ├── analysis/ # Python result summarizer script ├── threat_model/ # STRIDE threat analysis and DFD diagram ├── requirements.txt # Frozen Python dependencies └── README.md # Project documentation ``` </pre>
+aegisflow/
+├── app/                  # Vulnerable Flask app
+├── semgrep-rules/        # Custom MITRE-tagged Semgrep rules
+├── .github/
+│   └── workflows/
+│       └── ci.yml        # GitHub Actions CI configuration
+├── sbom/                 # SBOM output via Syft
+├── scripts/              # OTX and dark web scan scripts
+├── reports/              # Security scan outputs (Semgrep, Trivy, OTX)
+├── analysis/             # Python result summarizer script
+├── threat_model/         # STRIDE threat analysis and DFD diagram
+├── requirements.txt      # Frozen Python dependencies
+└── README.md             # Project documentation
+
 
 
 
