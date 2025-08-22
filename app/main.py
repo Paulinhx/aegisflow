@@ -1,5 +1,5 @@
 from flask import Flask, request
-import pickle, subprocess
+import pickle, subprocess, ast
 
 app = Flask(__name__)
 
@@ -9,7 +9,7 @@ def home():
 
 @app.route("/eval", methods=["POST"])
 def eval_input():
-    return eval(request.form.get("code"))  # ❌ Eval injection
+    return ast.literal_eval(request.form.get("code"))  # Fixed eval injection
 
 @app.route("/pickle", methods=["POST"])
 def load_pickle():
