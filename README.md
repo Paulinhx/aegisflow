@@ -79,7 +79,7 @@ aegisflow/
 
 ```bash
 # Clone the repo
-git clone https://github.com/paul-d/aegisflow.git
+git clone https://github.com/Paulinhx/aegisflow.git
 cd aegisflow
 
 # Create and activate virtual environment
